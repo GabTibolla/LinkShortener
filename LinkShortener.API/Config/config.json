@@ -1,0 +1,5 @@
+{
+  "ClassName": "LinkShortener.DAO.Firebase.LinkShortenerDBFirebase",
+  "ProjectName": "LinkShortener.DAO.Firebase",
+  "ConnectionString": ""
+}

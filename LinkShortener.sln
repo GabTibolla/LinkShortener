@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShortener.DAO", "LinkShortener.DAO\LinkShortener.DAO.csproj", "{D31B062C-CC6A-4694-8559-659353662F5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShortener.DAO.Firebase", "LinkShortener.DAO.Firebase\LinkShortener.DAO.Firebase.csproj", "{4236C56E-FC56-4AFD-8435-B0A9E47428A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShortener.DAO.MSSQL", "LinkShortener.DAO.MSSQL\LinkShortener.DAO.MSSQL.csproj", "{E62852D5-F2AB-42F3-A568-5A554FE63AD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShortener.Data", "LinkShortener.Data\LinkShortener.Data.csproj", "{2353B4B3-BBCE-4F42-B245-A559D45D3229}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.API", "LinkShortener.API\LinkShortener.API.csproj", "{8A78BF41-F54E-47FA-96BE-5486278FBA5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D31B062C-CC6A-4694-8559-659353662F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31B062C-CC6A-4694-8559-659353662F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31B062C-CC6A-4694-8559-659353662F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31B062C-CC6A-4694-8559-659353662F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4236C56E-FC56-4AFD-8435-B0A9E47428A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4236C56E-FC56-4AFD-8435-B0A9E47428A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4236C56E-FC56-4AFD-8435-B0A9E47428A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4236C56E-FC56-4AFD-8435-B0A9E47428A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62852D5-F2AB-42F3-A568-5A554FE63AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62852D5-F2AB-42F3-A568-5A554FE63AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62852D5-F2AB-42F3-A568-5A554FE63AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62852D5-F2AB-42F3-A568-5A554FE63AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2353B4B3-BBCE-4F42-B245-A559D45D3229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2353B4B3-BBCE-4F42-B245-A559D45D3229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2353B4B3-BBCE-4F42-B245-A559D45D3229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2353B4B3-BBCE-4F42-B245-A559D45D3229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A78BF41-F54E-47FA-96BE-5486278FBA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A78BF41-F54E-47FA-96BE-5486278FBA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A78BF41-F54E-47FA-96BE-5486278FBA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A78BF41-F54E-47FA-96BE-5486278FBA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7873C12F-9B79-4EF2-A347-88B25BDE7C04}
+	EndGlobalSection
+EndGlobal
