@@ -40,7 +40,9 @@ namespace LinkShortener.API.Pages
             string jsonContent = JsonConvert.SerializeObject(request);
             var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync("https://localhost:7147/shorten", content);
+            var req = HttpContext.Request;
+            var baseUrl = $"{req.Scheme}://{req.Host}";
+            var response = await httpClient.PostAsync($"{baseUrl}/shorten", content);
 
             if (!response.IsSuccessStatusCode)
             {
