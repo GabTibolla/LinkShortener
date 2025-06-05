@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShortener.DAO.MSSQL", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShortener.Data", "LinkShortener.Data\LinkShortener.Data.csproj", "{2353B4B3-BBCE-4F42-B245-A559D45D3229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkShortener.API", "LinkShortener.API\LinkShortener.API.csproj", "{8A78BF41-F54E-47FA-96BE-5486278FBA5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShortener.API", "LinkShortener.API\LinkShortener.API.csproj", "{8A78BF41-F54E-47FA-96BE-5486278FBA5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

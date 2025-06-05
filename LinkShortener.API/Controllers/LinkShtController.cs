@@ -46,11 +46,15 @@ namespace LinkShortener.API.Controllers
                     return StatusCode(500, "Failed to create database instance.");
                 }
 
+                
                 LinkShortener.Data.LinkShortener linkShortener = new LinkShortener.Data.LinkShortener(payload.url);
                 bool result = db.AddLink(linkShortener);
 
                 if (result)
-                    return Ok(new { short_url = linkShortener.shortUrl, long_url = linkShortener.longUrl });
+                {
+                    string fullUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}";
+                    return Ok(new { shortUrl = $"{fullUrl}/{linkShortener.shortUrl}", longUrl = linkShortener.longUrl });
+                }
 
                 return BadRequest("Failed to save in database.");
             }

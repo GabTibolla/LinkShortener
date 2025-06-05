@@ -25,11 +25,11 @@ namespace LinkShortener.Data
             return true;
         }
 
-        private string GenerateShortUrl(string originalUrl)
+        private string GenerateShortUrl(string originalUrl )
         {
             var hash = originalUrl.GetHashCode().ToString("X");
 
-            string currentUrl = $"{hash.Substring(0, 6)}";
+            string currentUrl = hash.Substring(0, 6);
             return currentUrl;
         }
     }

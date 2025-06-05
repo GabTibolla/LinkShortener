@@ -1,0 +1,75 @@
+﻿@page
+@model LinkShortener.API.Pages.IndexModel
+
+<div class="container">
+    <h2>Encurtador de URL</h2>
+
+    <div>
+        <input type="text" id="longUrl" placeholder="Cole sua URL aqui" />
+        <button id="btnShorten">Encurtar</button>
+    </div>
+
+    <div class="result" style="display:none;" id="resultBox">
+        <strong></strong>
+        <a href="#" target="_blank" id="shortUrlLink">
+            <span id="shortUrl"></span>
+        </a>
+        <button id="copyBtn">Copiar</button>
+    </div>
+
+
+    @Html.AntiForgeryToken()
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () {
+       $('#copyBtn').click(function () {
+            const url = $('#shortUrl').text();
+
+            navigator.clipboard.writeText(url).then(function () {
+                const btn = $('#copyBtn');
+                btn.text('Copiado!');
+                btn.prop('disabled', true); 
+
+                setTimeout(function () {
+                    btn.text('Copiar');
+                    btn.prop('disabled', false);
+                }, 5000);
+            }, function (err) {
+                alert('Erro ao copiar: ' + err);
+            });
+        });
+
+
+        $('#btnShorten').click(function () {
+            var longUrl = $('#longUrl').val();
+
+            if (!longUrl) {
+                alert("Digite uma URL válida.");
+                return;
+            }
+
+            var token = $('input[name="__RequestVerificationToken"]').val();
+
+            $.ajax({
+                url: '@Url.Page("Index", "ShortenUrl")',
+                method: 'POST',
+                contentType: 'application/json',
+                headers: {
+                    'RequestVerificationToken': token
+                },
+                data: JSON.stringify({ url: longUrl }),
+                success: function (data) {
+                    $('#shortUrl').text(data.shortUrl);
+                    $('#shortUrlLink').attr('href', data.shortUrl);
+                    $('#resultBox').fadeIn();
+                },
+                error: function (xhr) {
+                    alert('Erro ao encurtar URL: ' + xhr.statusText);
+                }
+            });
+        });
+    });
+</script>
+

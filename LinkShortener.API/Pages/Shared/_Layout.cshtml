@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LinkShortener</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav style="padding: 10px 40px; background-color: #5a5ae6; color: white; font-weight: 700;">
+            LinkShortener
+        </nav>
+    </header>
+
+    <main role="main" class="content" style="padding: 40px;">
+        @RenderBody()
+    </main>
+
+    <footer style="text-align:center; padding:20px; color:#666; font-size:14px;">
+        &copy; @DateTime.Now.Year - LinkShortener API
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
