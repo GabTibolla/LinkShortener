@@ -1,8 +1,6 @@
-# 🔗 LinkShortener
+# LinkShortener
 
 Encurtador de URLs simples feito com ASP.NET Core (.NET 8+)
-
-## ⚙️ Como usar (passo a passo)
 
 ```bash
 ## 1. Clone o repositório
@@ -20,7 +18,7 @@ cd LinkShortener
 # }
 ```
 
-## 🗄️ Banco de Dados
+## Banco de Dados
 
 Para adicionar suporte a outros bancos de dados, basta **criar uma nova classe que herde de `LinkShortenerDB.cs`**, localizada no projeto `LinkShortener.DAO`.
 
