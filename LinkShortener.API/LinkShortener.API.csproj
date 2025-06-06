@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LinkShortener.DAO.Firebase\LinkShortener.DAO.Firebase.csproj" />
+    <ProjectReference Include="..\LinkShortener.DAO.MSSQL\LinkShortener.DAO.MSSQL.csproj" />
     <ProjectReference Include="..\LinkShortener.DAO\LinkShortener.DAO.csproj" />
     <ProjectReference Include="..\LinkShortener.Data\LinkShortener.Data.csproj" />
   </ItemGroup>
